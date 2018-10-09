@@ -1,0 +1,175 @@
+*{
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	font-family: 'Source Serif';
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+}
+
+body{
+	position: relative;
+	min-width: 1200px;
+	margin: 0;
+}
+.clearfix{
+	clear: both;
+}
+*:focus {
+	outline: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: #3d3434;
+}
+::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #3d3434;
+	opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #3d3434;
+	opacity:  1;
+}
+::-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #3d3434;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: #3d3434;
+}
+
+.dtable{
+
+	display: table;
+	width: 100%;
+	height: 100%;
+
+	.drow{
+
+		display: table-row;
+
+		.dcell{
+
+			display: table-cell;
+			vertical-align: middle;
+			height: 100%;
+
+		}
+
+	}
+
+}
+.header{
+	background: url('src/img/header.jpg') no-repeat center center;
+	background-size: cover;
+	height: 750px;
+	text-align: center;
+	color: #ffffff;
+	.title{
+		font-size: 72px;
+	}
+	.subtitle{
+		font-size: 30px;
+		margin-top: 25px;
+	}
+	.scroll{
+		margin-top: 50px;
+		i{
+			margin-top: 10px;
+		}
+	}
+}
+
+
+.wrapper{
+	margin: 0 auto;
+	width: 100%;
+	background: url('src/img/bg-lines.png') no-repeat center center;
+	.form{
+		width: 80%;
+		margin: 0 auto;
+		padding: 100px 0;
+		input{
+			border: 1px solid #dddddd;
+			padding: 10px 25px;
+			border-radius: 10px;
+			width: 100%;
+			color: #39346b;
+			background: #ffffff;
+		}
+	}
+}
+.results{
+	width: 1030px;
+	margin:  0 auto;
+	padding-top: 100px;
+	.item{
+		float: left;
+		width: 300px;
+		margin: 0 20px 60px 20px;
+		text-align: center;
+		img{
+			text-align: center;
+			max-width: 80px;
+		}
+		.title{
+			font-size: 18px;
+			color: #39346b;
+			margin-top: 20px;
+		}
+		.ingredients{
+			margin-top: 10px;
+			font-size: 14px;
+			color: #dddddd;
+		}
+	}
+}
+
+.footer{
+	height: 50px;
+	background: #39346b;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	padding: 12px 0 0 0;
+}
+
+@media only screen and (min-width: 764px) and (max-width: 1200px) {
+	body{
+		min-width: 100%;
+	}
+
+	.results{
+		width: 700px;
+		padding-top: 50px;
+	}
+}
+
+@media only screen and (max-width: 764px) {
+	body{
+		min-width: 100%;
+	}
+	.header{
+		.title{
+			margin: 100px auto 0;
+			max-width: 80%;
+			font-size: 60px;
+		}
+	}
+	.results{
+		width: 300px;
+		padding-top: 50px;
+
+		.item{
+			float: none;
+			margin: 0 auto 60px auto;
+			max-width: 80%;
+		}
+	}
+}
